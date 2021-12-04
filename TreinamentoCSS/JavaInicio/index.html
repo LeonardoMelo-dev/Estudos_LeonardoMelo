@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./divEdit.css">
+  <title>Document</title>
+
+  <script>
+    function showMassage()
+    {
+      if(confirm("Quer Continuar"))
+      {
+        alert("Pagina carregada");
+      }
+      else
+      {
+        document.location.href = 'https://www.google.com';
+      }
+    }
+
+    var currentColor;
+
+    function changeBodyBackgroundColor(color)
+    {
+      if(currentColor != color)
+      {
+        document.body.classList.remove(currentColor);
+      }
+      document.body.classList.add(color);
+
+      currentColor = color;
+    }
+  </script>
+</head>
+<body onload="showMassage">
+  <div class="divEdit black" onClick="changeBodyBackgroundColor('black')"></div>
+  <div class="divEdit green" onclick="changeBodyBackgroundColor('green')"></div>
+  <div class="divEdit pink"  onClick="changeBodyBackgroundColor('pink')"></div>
+  <div class="divEdit red"  onClick="changeBodyBackgroundColor('red')"></div>
+  <div class="divEdit yellow"  onClick="changeBodyBackgroundColor('yellow')"></div>
+  
+
+  </div>
+</body>
+</html>

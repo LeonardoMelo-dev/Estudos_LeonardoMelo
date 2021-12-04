@@ -1,0 +1,27 @@
+.editarImg img 
+{
+  max-width: 13px;
+  max-height: 13px;
+  width: auto;
+  height: auto;
+}
+
+.removerImg img
+{
+  max-width: 15px;
+  max-height: 15px;
+  width: auto;
+  height: auto;
+}
+
+.add img
+{
+  max-width: 15px;
+  max-height: 15px;
+  width: auto;
+  height: auto;
+}
+
+
+
+

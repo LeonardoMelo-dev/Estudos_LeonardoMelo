@@ -1,0 +1,126 @@
+<!--
+  Qualquer coisa
+
+  HyperText
+  é um texto com links
+
+  Markup
+  Tags marca
+
+  Language
+  regras de uma linguagem
+
+  #RumoAoPróximoNível!
+-->
+
+<html>
+  <head>
+    <title>Leonardo Melo - DoWhile 2021</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+      <main>
+
+        <div class="container">
+
+          <div class="avatar">
+            <span>
+              <img src="images/build.svg" alt="Selo Rocletseat">
+            </span>
+            <img src="./images/profileImg.jpg" alt="Foto pessoal">
+          </div>
+
+          <h1 id="userName">Leonardo Felicio de Melo</h1>
+          <a href="https://github.com" target="_blank"><img src="./images/github.svg" alt="ícone github">LeonardoMelo-dev</a>
+
+          <p>
+            An instructor focused on helping pople start programming for web
+          </p>
+          
+          <ul id=socialLinks>
+            <li class = youtube>
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="./images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class = facebook>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="./images/facebook.svg" alt="ícone facebook">
+              </a>
+            <li class = instagram>
+              <a href="https://www.youtube.com" target="_blank">
+                <img src="./images/youtube.svg" alt="ícone youtube">
+              </a>
+            </li>
+            <li class = twitter>
+              <a href="https://twitter.com" target="_blank">
+                <img src="./images/twitter.svg" alt="ícone twitter">
+              </a>
+            </li>
+          </ul>
+            
+            
+          
+
+        </div>
+
+      </main>
+
+      <script>
+
+        /*
+        Variaveis: let ou const
+        
+        - let = Variavel comun
+        - Const = Variavel imutavel
+        
+
+        let accept = true
+        
+        Criando Objeto
+        let user = {
+          name: "Leonardo Melo",
+          phone: "1234455", 
+          accept: "True" 
+        }
+
+        alert(user.name);
+
+        */
+       
+        const linksSocialMedia = 
+        {
+          
+          github: "LeonardoMelo-dev",
+          youtube: "",
+          facebook: "leonardo.melo.9231712",
+          instagram: "",
+          twitter: ""
+        }
+
+        function changeSocialMediaLinks()
+        {
+
+          for (let li of socialLinks.children)
+          {
+            const social = li.getAttribute("class")
+            
+           li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+          }
+          
+        }
+
+        changeSocialMediaLinks()
+        
+
+      </script>
+
+  </body>
+</html>

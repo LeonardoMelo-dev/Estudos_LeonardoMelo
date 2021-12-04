@@ -1,0 +1,36 @@
+body {
+  padding: 100px;
+  background-color: black; }
+
+h1 {
+  background-color: #360068;
+  color: black;
+  text-align: center; }
+
+p {
+  color: #7474db;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
+.tabela {
+  background-color: #312e2e;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left; }
+
+#coluna2,
+#coluna4 {
+  color: black; }
+
+td {
+  color: black; }
+
+.botao1 {
+  background-color: rebeccapurple; }
+
+.botao2 {
+  background-color: slategray; }
+
+/*# sourceMappingURL=main.css.map */

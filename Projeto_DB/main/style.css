@@ -1,0 +1,15 @@
+.cardsBooks
+{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+h1
+{
+  text-align: center;
+  padding-top: 50px;
+}
+

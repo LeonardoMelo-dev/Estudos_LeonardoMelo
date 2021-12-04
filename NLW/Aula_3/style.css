@@ -1,0 +1,103 @@
+*
+{
+  margin: 0;
+}
+
+html,
+body 
+{
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  /* -webkit-font-smoothing: antaliased; */
+}
+
+body 
+{
+  display: grid;
+  place-items: center;
+}
+
+main
+{
+  background: url(./images/background.png);
+  width: 375px;
+  height: 812px; 
+}
+
+.container
+{
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.avatar
+{
+  /* 1rem = 16px, logo 10rem = 160 pixels */
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative; /*Diz que isto será relativo ao elemento absoluto*/
+}
+
+/*Entra no span que esta dentro de avatar*/
+.avatar span
+{
+  position: absolute; /*Diz que esta imagem no caso, deve estar no topo de tudo da página*/
+  top: -15px;
+  z-index: 1;
+}
+
+/*Pega a imagen que está no topo da tag*/
+.avatar > img
+{
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*Faz com que a imagem retorne ao sua proporção original.*/
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 
+{
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+
+a 
+{
+  color: var(--gray);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p
+{
+  margin-top: 2rem;
+}
+
+ul
+{
+  margin-top: 4rem;
+
+  list-style: none; /*Tira as bolinhas do <ul>*/
+  padding: 0; /*Tira o preenchimento do <ul>*/
+
+  display: flex; /*Deixa os elementos um ao lado do outro*/
+  gap: 0.5rem; /*por conta do display: flex; Adiciona um espaçamento entre os itens*/
+  justify-content: center; /*por conta do display: flex; permite que eu alinhe as coisas ao centro*/
+}

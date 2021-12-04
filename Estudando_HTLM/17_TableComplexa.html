@@ -1,0 +1,67 @@
+<!--
+  2 Lojas
+    Quantos produtos foram produzidos, quantos
+    vendidos e agrupado por nome dos produtos
+    rowspan = Define a quantidade de linas que o a coluna irá ocupar
+    colspan = Define a quantidade de colunas que a linha irá ocupar 
+    span = Mesma coisa do colspan só que dento de um colgroup
+    colgroup = Manipula o estilo e a formatação da tabela
+-->
+
+<table>
+  <caption>Produzidos x Vendidos por Loja</caption>
+
+  <colgroup>
+    <col style="background-color: rgb(0, 0, 0);">
+    <col span="2" style="background-color: red;"> 
+    <col span="2" style="background-color: royalblue;">
+    <col style="background-color: rgb(0, 0, 0);">
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th rowspan="2">Itens</th>
+      <th colspan="2" scope="colgroup">Afonso Pena</th>
+      <th colspan="2" scope="colgroup">Antônia Pereira</th>
+      <th rowspan="2">id</th>
+    </tr> 
+  
+
+  <tr>
+    <th scope="col">Produzidos</th>
+    <th scope="col">Vendidos</th>
+    <th scope="col">Produzidos</th>
+    <th scope="col">Vendidos</th>
+  </tr>
+
+  <!--
+  <tr>
+    <th colspan="6">Quantidade</th>
+  </tr>
+  -->
+  
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">Vassouras</th>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+      <th scope="row">1</th>
+    </tr>
+
+    <tr>
+      <th scope="row">Baldes</th>
+      <td>10</td>
+      <td>10</td>
+      <td>30</td>
+      <td>25</td>
+      <th scope="row">2</th>
+    </tr>
+
+
+  </tbody>
+
+</table>

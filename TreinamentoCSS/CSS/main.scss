@@ -1,0 +1,51 @@
+
+body
+{
+  padding: 100px;
+  background-color: rgb(0, 0, 0);
+}
+
+h1
+{
+  background-color: rgb(54, 0, 104);
+  color: rgb(0,0,0);
+  text-align: center;
+}
+
+p
+{
+  color: rgb(116, 116, 219);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.tabela
+{
+  background-color: rgb(49, 46, 46);
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#coluna2,
+#coluna4
+{
+  color: black;
+}
+
+td
+{
+  color: black;
+}
+
+.botao1
+{
+  background-color: rebeccapurple;
+}
+
+.botao2
+{
+  background-color: slategray;;
+}

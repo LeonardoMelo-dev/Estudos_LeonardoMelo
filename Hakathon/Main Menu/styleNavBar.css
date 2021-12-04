@@ -1,0 +1,69 @@
+img
+{
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+  margin-left: 0;
+}
+
+
+.navbar-light .navbar-brand {
+  color: #6c63ff;
+}
+
+.navbar-nav
+{
+  margin-top: 16px;
+  font-size: 17px;
+}
+
+.navbar-nav ul
+{
+  justify-content: center;
+}
+
+.nav-link
+{
+  padding-left: 30px !important;
+  padding-left: 30px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #6c63ff;
+}
+
+.rihtElements 
+{
+
+  display: flex;
+  margin-right: 3vh;
+  text-align: center;
+}
+
+.glyphicon-circle-arrow-right:before 
+{
+  
+  margin-right: 4vh;
+  content: "\e131";
+}
+
+
+.glyphicon 
+{
+  font-size: 25px;
+  color:#6c63ff;
+}
+
+.glyphicon-circle-arrow-right
+{
+  margin-left: 5px;
+}
+
+
+   
+
+
+
+
+
